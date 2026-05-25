@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.aayushsahni009.commandgod" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    
+    <name>Command God</name>
+    <description>Access the Command God platform directly from your Android device.</description>
+    <author email="aayushsahni009@gmail.com" href="https://github.com/aayushsahni009-minecraft/">Aayush Sahni</author>
+
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+        
+        <icon src="www/assets/icon-192x192.png" density="ldpi" />
+        <icon src="www/assets/196.png" density="mdpi" />
+        <icon src="www/assets/196.png" density="hdpi" />
+        <icon src="www/assets/196.png" density="xhdpi" />
+        <icon src="www/assets/512.png" density="xxhdpi" />
+        <icon src="www/assets/512.png" density="xxxhdpi" />
+        
+        <preference name="Orientation" value="portrait" />
+    </platform>
+
+    <preference name="Fullscreen" value="false" />
+    <preference name="BackgroundColor" value="0xff121212" />
+
+</widget>
