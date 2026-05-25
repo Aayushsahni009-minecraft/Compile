@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command God Workspace</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+        .loader {
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Replace this URL with your actual GitHub Pages website URL
+        const gitHubWebsiteURL = "https://Aayushsahni009-minecraft.gitHub.io/CommandGodWorkspace";
+
+        window.onload = function() {
+            // Check if the device is online before redirecting
+            if (navigator.onLine) {
+                window.location.href = gitHubWebsiteURL;
+            } else {
+                document.getElementById('status').innerText = "Connection Error. Please check your internet.";
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="loader">
+        <h2 id="status">Loading Command God...</h2>
+    </div>
+</body>
+</html>
